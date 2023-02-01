@@ -6,7 +6,12 @@ li {
   list-style-type: none;
   display: inline;
 }
-
+ul{
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
 .logo{
   padding:2% 2%;
   text-align: center;
@@ -14,15 +19,15 @@ li {
 .main_visu{
   width:100%;
 }
-#nav{
+nav{
+  column-gap: 20px;
+  display: flex; 
+  justify-content: center;
   text-align: center;
   padding:40px 0px 90px 0px;
 }
 .nav_li{
-  padding:0px 40px 0px 40px;
   font-size:18px;
-  color: var(--unnamed-color-333333);
-  text-align: left;
   font: normal normal normal 18px/18px Arial;
   letter-spacing: 1.8px;
   color: #333333;
