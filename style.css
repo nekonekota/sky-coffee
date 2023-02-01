@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+.logo{
+  padding:2% 2%;
+  text-align: center;
+}
+.main_visu{
+  width:100%;
+}
+#nav{
+  text-align: center;
+  padding:40px 0px 90px 0px;
+}
+.nav_li{
+  padding:0px 40px 0px 40px;
+  font-size:18px;
+  color: var(--unnamed-color-333333);
+  text-align: left;
+  font: normal normal normal 18px/18px Arial;
+  letter-spacing: 1.8px;
+  color: #333333;
+  opacity: 1;
+}
+.flex {
+  display: flex; /*横並び*/
+  margin-left:165px;
+  margin-bottom: 100px;
+}
+.flex .image {
+  width: 555px; /*画像サイズ指定*/ 
+  height: 547px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .right {
+  margin: 180px 0 0 40px;
+  padding: 0;
+}
+.flex .title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.flex .text {
+  margin: 10px 0 0;
+  padding: 0;
+}
+.text1{
+  color: var(--unnamed-color-333333);
+text-align: left;
+font: normal normal normal 16px/16px Arial;
+letter-spacing: 1.6px;
+color: #333333;
+opacity: 1;
+}
+.text2 {
+  color: var(--unnamed-color-24a8bf);
+text-align: left;
+font: normal normal normal 32px/32px Hiragino Sans;
+letter-spacing: 3.2px;
+color: #24A8BF;
+opacity: 1;
+}
+.text3{
+  color: var(--unnamed-color-333333);
+text-align: left;
+font: normal normal normal 16px/29px Hiragino Sans;
+letter-spacing: 1.6px;
+color: #333333;
+opacity: 1;
+}
+/* 画像を天地中央表示 */
+
+.flex .image {
+  overflow: hidden;
+  position: relative;
+}
+.flex .image::before {
+  content: "";
+  display: block;
+  padding-top: 547px;
+}
+.flex .image img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.blog_title{
+  text-align: center;
+}
+.blog_title h1{
+  color: var(--unnamed-color-24a8bf);
+  font: normal normal bold 32px/32px Arial;
+  letter-spacing: 2.56px;
+  color: #24A8BF;
+}
+.blog_title p{
+  color: var(--unnamed-color-333333);
+font: normal normal normal 13px/13px Hiragino Sans;
+letter-spacing: 0.39px;
+color: #333333;
+opacity: 1;
+
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom:30px;
+  padding-top: 15px;
+  max-width: 1140px;
+}
+
+.item:not(:nth-child(3n+3)) {
+  margin-right: 2%;
+}
+
+.item{
+  margin-right:0 ;
+  width: calc(100%/3 - 20px);
+  margin-bottom:54px;
+}
+
+
+@media not all and (min-width: 768px) {
+  .item {
+    width: 100%;
+  }
+
+  .item:not(:nth-child(3n+3)) {
+    margin-right: 0;
+  }
+
+  .item:nth-child(n+2) {
+    margin-top: 10px;
+  }
+}
+
+.blog_img{
+  width:100%;
+  height: auto;
+}
+.blog_h1{
+  color: var(--unnamed-color-333333);
+
+font: normal normal normal 15px/24px Hiragino Sans;
+letter-spacing: 0px;
+color: #333333;
+opacity: 1;
+}
+.blog_p{
+  color: var(--unnamed-color-333333);
+
+font: normal normal normal 12px/16px Arial;
+letter-spacing: 0.6px;
+color: #333333;
+opacity: 1;
+}
+.btn{
+  display       : block;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 14px 0px 14px 0px;   /* 余白       */
+  background    : #ffffff;     /* 背景色     */
+  color         : #24A8BF;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border: 1px solid var(--unnamed-color-24a8bf);
+  border: 1px solid #24A8BF;
+  border-radius: 3px;
+  font: normal normal normal 14px/15px Hiragino Sans;
+  letter-spacing: 0px;
+  color: #24A8BF;
+
+}
+.btn::after{
+  display: block;
+  content: "";
+  background-image:url(img/icon_arrow-right@2x.png);
+  background-size: 5px 9px;
+  width: 5px;
+  height: 9px;
+  right: 1em;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:40%;
+}
+
+.footer{
+  margin-top:50px;
+  text-align: center;
+  padding-top:70px;
+  padding-bottom: 12px;
+  background-color: #000000;
+}
+.footer_logo img{
+  filter: brightness(1) invert(1);
+}
+.footer_p{
+font: normal normal normal 12px/12px Helvetica;
+letter-spacing: 0.6px;
+color: #8B8B8B;
+opacity: 1;
+
+}
